@@ -30,6 +30,7 @@ Vue.component('delProductModal', {
       return {
       };
     },
+    //傳入產品資料tempProudct及user
     props: ['tempProduct', 'user'],
     methods: {
       // 刪除產品
@@ -41,6 +42,7 @@ Vue.component('delProductModal', {
   
         axios.delete(url).then(() => {
           $('#delProductModal').modal('hide');
+          //刪除產品成功後觸發更新產品列頁面
           this.$emit('update');
         });
       },

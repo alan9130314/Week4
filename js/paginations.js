@@ -47,6 +47,7 @@ Vue.component('pagination', {
       };
     },
     props: {
+      //props傳入的:pages="pagination" 屬性pages 值為pagination
       pages: {},
     },
     methods: {

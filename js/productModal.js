@@ -93,6 +93,7 @@ Vue.component('productModal', {
       </div>
     </div>
   </div>`,
+  //元件內 data 必須使用 function 去傳送
     data() {
       return {
         tempProduct: {
